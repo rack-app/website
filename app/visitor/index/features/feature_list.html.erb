@@ -1,0 +1,43 @@
+<%-
+
+  list = {
+      'Easy to understand syntax' => [
+          'module method level endpoint definition inspirited heavily by the Sinatra DSL',
+          'unified error handling',
+          'syntax sugar for default header definitions',
+          'namespaces for endpoint request path declarations so it can be dry and unified'
+      ],
+      'no Class method bloat, so you can enjoy pure ruby without any surprises' => [],
+      'App mounting so you can crete separated controllers for different task' => [],
+      'Null time look up routing' => [
+          'allows as many endpoint registration to you as you want, without impact on route look up speed'
+      ],
+      'only basic sets for instance method lvl for the must need tools, such as params, payload ' => [],
+      'simple to use class level response serializer' => [
+          'so you can choose what type of serialization you want without any enforced convention'
+      ],
+      'static file serving so you can mount even filesystem based endpoints too' => [],
+      'built in testing module so your app can easily written with BDD approach' => [],
+      'made with performance in mind so your app don&#39;t lose time by your framework' => [],
+
+      'controller/endpoint level based middleware definitions' => [
+          'you can define middleware stack before endpoints and it will only applied to them, similar like protected method workflow'
+      ],
+
+      'File Upload and file download in a efficient and elegant way with minimal memory consuming' => [
+          'note that this is not only memory friendly way pure rack solution, but also 2x faster than the usually solution which includes buffering in memory'
+      ]
+
+  }
+
+-%>
+
+
+<div class="text-right">
+  <%- list.each do |title, descriptions| -%>
+    <h3><%= title -%></h3>
+    <%- [descriptions].flatten.each do |desc| -%>
+      <p><%= desc -%></p>
+    <%- end -%>
+  <%- end -%>
+</div>
