@@ -1,0 +1,80 @@
+<section>
+    <div class="container">
+
+
+        <table class="CodeRay">
+            <tr>
+                <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
+<a href="#n2" name="n2">2</a>
+<a href="#n3" name="n3">3</a>
+<a href="#n4" name="n4">4</a>
+<a href="#n5" name="n5">5</a>
+<a href="#n6" name="n6">6</a>
+<a href="#n7" name="n7">7</a>
+<a href="#n8" name="n8">8</a>
+<a href="#n9" name="n9">9</a>
+<strong><a href="#n10" name="n10">10</a></strong>
+<a href="#n11" name="n11">11</a>
+<a href="#n12" name="n12">12</a>
+<a href="#n13" name="n13">13</a>
+<a href="#n14" name="n14">14</a>
+<a href="#n15" name="n15">15</a>
+<a href="#n16" name="n16">16</a>
+<a href="#n17" name="n17">17</a>
+<a href="#n18" name="n18">18</a>
+<a href="#n19" name="n19">19</a>
+<strong><a href="#n20" name="n20">20</a></strong>
+<a href="#n21" name="n21">21</a>
+<a href="#n22" name="n22">22</a>
+<a href="#n23" name="n23">23</a>
+<a href="#n24" name="n24">24</a>
+<a href="#n25" name="n25">25</a>
+<a href="#n26" name="n26">26</a>
+<a href="#n27" name="n27">27</a>
+</pre>
+                </td>
+                <td class="code"><pre><span style="color:#777"># app.rb</span>
+
+require <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">rack/app</span><span
+                            style="color:#710">'</span></span>
+require <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">rack/app/front_end</span><span
+                            style="color:#710">'</span></span>
+
+<span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">App</span> &lt; <span
+                            style="color:#036;font-weight:bold">Rack</span>::<span
+                            style="color:#036;font-weight:bold">App</span>
+
+  extend <span style="color:#036;font-weight:bold">Rack</span>::<span
+                            style="color:#036;font-weight:bold">App</span>::<span
+                            style="color:#036;font-weight:bold">FrontEnd</span>
+
+  helpers <span style="color:#080;font-weight:bold">do</span>
+
+    <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">method_that_can_be_used_in_template</span>
+      <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">hello world!</span><span
+              style="color:#710">'</span></span>
+    <span style="color:#080;font-weight:bold">end</span>
+
+  <span style="color:#080;font-weight:bold">end</span>
+
+  <span style="color:#777"># use ./app/layout.html.erb as layout, this is optionable</span>
+  layout <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">layout.html.erb</span><span
+                            style="color:#710">'</span></span>
+
+  <span style="color:#777"># at '/' the endpoint will serve (render)</span>
+  <span style="color:#777"># the ./app/index.html content as response body and wrap around with layout if layout is given</span>
+  get <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span
+                            style="color:#D20">/</span><span style="color:#710">'</span></span> <span
+                            style="color:#080;font-weight:bold">do</span>
+    render <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span
+                            style="color:#D20">index.html</span><span style="color:#710">'</span></span>
+  <span style="color:#080;font-weight:bold">end</span>
+
+<span style="color:#080;font-weight:bold">end</span></pre>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+
+</section>

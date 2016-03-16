@@ -1,0 +1,11 @@
+.slogan {
+    float: right;
+    padding-right: 25px;
+    text-align: right;
+    font: 500% 'tangerine', arial;
+    color: #111;
+}
+
+body {
+    background: #F7F7F7 url(pattern.png) fixed;
+}

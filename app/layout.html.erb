@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Rack::App</title>
+
+  <meta charset="utf-8">
+  <meta name="description" content="Web with style">
+  <meta name="author" content="Adam Luzsi">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+  <link href="/css/freelancer.css" rel="stylesheet">
+  <link href="/css/style.css" rel="stylesheet" type="text/css"/>
+  <link href="/fonts/tangerine_v1.css" rel="stylesheet" type="text/css"/>
+  <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="/css/montserrat.css" rel="stylesheet" type="text/css">
+  <link href="/css/italic.css" rel="stylesheet" type="text/css">
+
+  <script src="/js/google_analytics.js"></script>
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/jquery.easing.min.js"></script>
+  <!--<script src="/js/jquery-1.12.1.min.js"/>-->
+  <!--<script src="/js/jquery-2.2.1.min.js"/>-->
+  <!--<script src="/js/jquery.min.js"/>-->
+
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/classie.js"></script>
+  <script src="/js/cbpAnimatedHeader.js"></script>
+  <script src="/js/html5shiv.js"></script>
+  <script src="/js/respond.min.js"></script>
+
+  <!-- Contact Form JavaScript -->
+  <!--<script src="/js/jqBootstrapValidation.js"></script>-->
+  <!--<script src="/js/contact_me.js"></script>-->
+
+  <!-- Custom Theme JavaScript -->
+  <script src="/js/freelancer.js"></script>
+
+</head>
+<body>
+
+<%= render 'navbar.html.erb' -%>
+
+<div id="page-top" class="index">
+  <%= yield -%>
+</div>
+
+<%= render 'footer.html.erb' -%>
+<%= render 'scroll_top.html' -%>
+
+</body>
+
+</html>
