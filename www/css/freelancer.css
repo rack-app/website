@@ -61,14 +61,9 @@ hr.star-light {
     border-color: #fff;
 }
 
-hr.star-light-green-bkg:after{
+hr.star-light:after {
     color: #fff;
     background-color: #18bc9c;
-}
-
-hr.star-light-white-bkg:after{
-    color: #18bc9c;
-    background-color: #fff;
 }
 
 hr.star-primary {
