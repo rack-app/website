@@ -11,5 +11,4 @@ gem 'rack-app-bootstrap'
 
 group :development do 
   gem 'shotgun'
-  gem 'coderay'
-end 
+end

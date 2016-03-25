@@ -1,7 +1,6 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    coderay (1.1.1)
     erubis (2.7.0)
     loader (3.1.0)
     puma (3.1.0)
@@ -21,7 +20,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  coderay
   erubis
   loader
   puma
@@ -31,4 +29,4 @@ DEPENDENCIES
   shotgun
 
 BUNDLED WITH
-   1.11.0
+   1.11.2
