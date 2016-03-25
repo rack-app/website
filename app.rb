@@ -14,9 +14,10 @@ class App < Rack::App
   end
 
   serve_files_from '/www'
+
   mount Rack::App::Bootstrap
   mount App::Visitor
-  mount App::Visitor::Examples, to: '/examples'
+  mount App::Examples, to: '/examples'
 
   EXAMPLE_LINK_PATHS = router.endpoints.reduce({}) do |links, endpoint|
 

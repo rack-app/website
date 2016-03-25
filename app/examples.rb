@@ -1,9 +1,5 @@
-class App::Visitor::Examples < App::Visitor
+class App::Examples < App::Visitor
 
-  # get '/' do
-  #   render 'index.html.erb'
-  # end
-  
   desc 'a simple api'
   get '/simple_api' do
     render 'simple_api.html'
