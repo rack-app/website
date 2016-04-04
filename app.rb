@@ -18,6 +18,7 @@ class App < Rack::App
   mount Rack::App::Bootstrap
   mount App::Visitor
   mount App::Examples, to: '/examples'
+  mount App::Sandbox, to: '/sandbox'
 
   EXAMPLE_LINK_PATHS = router.endpoints.reduce({}) do |links, endpoint|
 
