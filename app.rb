@@ -1,7 +1,7 @@
 require 'erubis'
 class App < Rack::App
 
-  extend Rack::App::FrontEnd
+  apply_extensions :front_end
 
   layout 'layout.html.erb'
 
