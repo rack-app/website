@@ -5,7 +5,7 @@ GEM
     loader (3.1.0)
     puma (3.2.0)
     rack (1.6.4)
-    rack-app (3.3.0)
+    rack-app (3.4.0)
       rack
     rack-app-bootstrap (0.4.0)
       rack-app (>= 3.0.0)
