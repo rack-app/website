@@ -40,4 +40,9 @@ class App::Examples < App::Visitor
     render 'cli.html'
   end
 
+  desc 'a controller/app with basic auth'
+  get '/basic_auth' do
+    render 'basic_auth.html'
+  end
+
 end
