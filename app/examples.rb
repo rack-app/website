@@ -45,4 +45,9 @@ class App::Examples < App::Visitor
     render 'basic_auth.html'
   end
 
+  desc 'an asyncron scalable solution for non-blocking background processing'
+  get '/rack_app_worker' do
+    render 'rack_app_worker.html'
+  end
+
 end
