@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby '2.3.1'
+
 gem 'puma'
 gem 'loader'
 
@@ -11,6 +13,6 @@ gem 'rack-app-bootstrap'
 
 gem 'rack-host-redirect'
 
-group :development do 
+group :development do
   gem 'shotgun'
 end
