@@ -15,9 +15,9 @@ class App::Examples < App::Visitor
     render 'redirect.html'
   end
 
-  desc 'auth: an authenticated and authorized API'
-  get '/auth_api' do
-    render 'auth_api.html'
+  desc 'auth: escher auth'
+  get '/escher' do
+    render 'escher.html'
   end
 
   desc 'stream: media server than handle files'
