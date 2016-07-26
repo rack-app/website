@@ -1,15 +1,18 @@
 <li class="dropdown">
 
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-    <p>I Want to Create <span class="caret"></span></p>
+    <p>How-to<span class="caret"></span></p>
   </a>
 
-  <ul class="dropdown-menu">
+  <ul class="dropdown-menu scrollable-menu">
 
-    <li class="dropdown-header">Examples</li>
-    <li role="separator" class="divider"></li>
-    <%- example_links.each do |href, description| -%>
-      <li><a href="<%= href -%>"><%= description -%></a></li>
+    <%- example_groups.each do |group, example_links| -%>
+      <li class="dropdown-header"><%= group %>:</li>
+
+      <%- example_links.each do |example_link| -%>
+        <li><a href="<%= example_link[:href] -%>"><%= example_link[:desc] -%></a></li>
+      <%- end -%>
+      <li role="separator" class="divider"></li>
     <%- end -%>
 
   </ul>

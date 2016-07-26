@@ -7,8 +7,8 @@ class App < Rack::App
 
   helpers do
 
-    def example_links
-      EXAMPLE_LINK_PATHS
+    def example_groups
+      EXAMPLE_GROUPS
     end
 
   end
@@ -20,13 +20,21 @@ class App < Rack::App
   mount App::Examples, to: '/examples'
   mount App::Sandbox, to: '/sandbox'
 
-  EXAMPLE_LINK_PATHS = router.endpoints.reduce({}) do |links, endpoint|
+  EXAMPLE_GROUPS = router.endpoints.reduce([]) do |links, endpoint|
 
     if endpoint[:request_path] =~ /^\/examples\// && endpoint[:request_method] == 'GET'
-      links.merge!({endpoint[:request_path] => endpoint[:description]})
+      group, desc = endpoint[:properties][:description].split(':').map(&:strip)
+
+      links.push(
+        {
+          href: endpoint[:request_path],
+          group: group,
+          desc: desc
+        }
+      )
     end
 
     links
-  end
+  end.group_by{|link| link[:group] }.freeze
 
 end

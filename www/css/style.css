@@ -9,3 +9,9 @@
 /*body {*/
     /*background: #F7F7F7 url(pattern.png) fixed;*/
 /*}*/
+
+.scrollable-menu {
+    height: auto;
+    max-height: 400px;
+    overflow-x: hidden;
+}

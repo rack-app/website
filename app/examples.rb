@@ -1,53 +1,81 @@
 class App::Examples < App::Visitor
 
-  desc 'a simple api'
+  desc 'skeletons: simple api'
   get '/simple_api' do
     render 'simple_api.html'
   end
 
-  desc 'a restful api'
+  desc 'skeletons: restful api'
   get '/restful_api' do
     render 'restful_api.html'
   end
 
-  desc 'an authenticated and authorized API'
+  desc 'skeletons: redirect request to somewhere else'
+  get '/redirect' do
+    render 'redirect.html'
+  end
+
+  desc 'auth: an authenticated and authorized API'
   get '/auth_api' do
     render 'auth_api.html'
   end
 
-  desc 'a media server than handle files'
+  desc 'stream: media server than handle files'
   get '/media_server' do
     render 'media_server.html'
   end
 
-  desc 'a simple static website'
+  desc 'stream: serve file from server'
+  get '/file_serving' do
+    render 'file_serving.html'
+  end
+
+  desc 'stream: receive payload stream and handle'
+  get '/payload_stream' do
+    render 'payload_stream.html'
+  end
+
+  desc 'front end: simple static website'
   get '/simple_website' do
     render 'simple_website.html'
   end
 
-  desc 'an application that able to mount other Rack based applications such as Grape, Sinatra'
+  desc 'skeletons: an application that able to mount other Rack based applications such as Grape, Sinatra or Rails'
   get '/mount_rack_based_app' do
     render 'mount_rack_based_app.html'
   end
 
-  desc 'a rack-app extension'
+  desc 'extensions: create rack-app extension'
   get '/extension' do
     render 'extension.html'
   end
 
-  desc 'a cli command for my application'
+  desc 'terminal: cli command for my application'
   get '/cli' do
     render 'cli.html'
   end
 
-  desc 'a controller/app with basic auth'
+  desc 'auth: controller/app with basic auth'
   get '/basic_auth' do
     render 'basic_auth.html'
   end
 
-  desc 'an asyncron scalable solution for non-blocking background processing'
+  desc 'back ground jobs: asyncron scalable solution for non-blocking background processing'
   get '/rack_app_worker' do
     render 'rack_app_worker.html'
   end
 
+  desc 'skeletons: resources as mountable applications'
+  get '/mounting' do
+    render 'mounting.html'
+  end
+
+  desc 'auth: validate query params'
+  get '/validate_params' do
+    render 'validate_params.html'
+  end
+
+  desc 'utils: create path based on project location' do
+    render 'file_path.html'
+  end
 end
