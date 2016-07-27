@@ -20,6 +20,8 @@ class App::Examples < App::Visitor
     render 'escher.html'
   end
 
+  alias_endpoint '/auth_api', '/escher'
+
   desc 'stream: media server than handle files'
   get '/media_server' do
     render 'media_server.html'
