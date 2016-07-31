@@ -7,3 +7,4 @@ Loader.autoload
 
 require 'erubis'
 require 'tilt/erubis'
+require_relative 'lib/example_list'
