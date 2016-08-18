@@ -1,21 +1,31 @@
 class App::Examples < App::Visitor
 
-  desc 'skeletons: simple api'
+  desc 'core: simple api'
   get '/simple_api' do
     render 'simple_api.html'
   end
 
-  desc 'skeletons: restful api'
+  desc 'core: restful api'
   get '/restful_api' do
     render 'restful_api.html'
   end
 
-  desc 'skeletons: before and after block'
+  desc 'core: before and after block'
   get '/hooks' do
     render 'hooks.html'
   end
 
-  desc 'skeletons: redirect request to somewhere else'
+  desc 'core: middlewares'
+  get '/middleware' do
+    render 'middleware.html'
+  end
+
+  desc 'bundled extensions: logger'
+  get '/logger' do
+    render 'logger.html'
+  end
+
+  desc 'core: redirect request to somewhere else'
   get '/redirect' do
     render 'redirect.html'
   end
@@ -45,7 +55,7 @@ class App::Examples < App::Visitor
     render 'simple_website.html'
   end
 
-  desc 'skeletons: an application that able to mount other Rack based applications such as Grape, Sinatra or Rails'
+  desc 'core: an application that able to mount other Rack based applications such as Grape, Sinatra or Rails'
   get '/mount_rack_based_app' do
     render 'mount_rack_based_app.html'
   end
@@ -70,7 +80,7 @@ class App::Examples < App::Visitor
     render 'rack_app_worker.html'
   end
 
-  desc 'skeletons: resources as mountable applications'
+  desc 'core: resources as mountable applications'
   get '/mounting' do
     render 'mounting.html'
   end
