@@ -5,7 +5,7 @@ GEM
     loader (3.1.0)
     puma (3.6.0)
     rack (2.0.1)
-    rack-app (4.0.1)
+    rack-app (5.0.0)
       rack
     rack-app-front_end (0.19.0)
       rack-app (>= 2.0.0)
