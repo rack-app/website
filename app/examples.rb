@@ -10,6 +10,11 @@ class App::Examples < App::Visitor
     render 'restful_api.html'
   end
 
+  desc 'skeletons: before and after block'
+  get '/hooks' do
+    render 'hooks.html'
+  end
+
   desc 'skeletons: redirect request to somewhere else'
   get '/redirect' do
     render 'redirect.html'
