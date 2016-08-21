@@ -20,6 +20,11 @@ class App::Examples < App::Visitor
     render 'middleware.html'
   end
 
+  desc 'core: stream response'
+  get '/stream' do
+    render 'stream.html'
+  end
+
   desc 'bundled extensions: logger'
   get '/logger' do
     render 'logger.html'
@@ -90,7 +95,8 @@ class App::Examples < App::Visitor
     render 'validate_params.html'
   end
 
-  desc 'utils: create path based on project location' do
+  desc 'utils: create path based on project location'
+  get '/file_path' do
     render 'file_path.html'
   end
 end
