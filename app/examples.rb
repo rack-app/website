@@ -20,6 +20,11 @@ class App::Examples < App::Visitor
     render 'middleware.html'
   end
 
+  desc 'core: endpoint specific middlewares'
+  get '/next_endpoint_middlewares' do
+    render 'next_endpoint_middlewares.html'
+  end
+
   desc 'core: stream response'
   get '/stream' do
     render 'stream.html'
