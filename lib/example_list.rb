@@ -4,12 +4,12 @@ module ExampleList
   def groups_from(app)
     app.router.endpoints.reduce([]) do |links, endpoint|
 
-      if endpoint[:request_path] =~ /^\/examples\// && endpoint[:request_method] == 'GET'
-        group, desc = endpoint[:properties][:description].split(':').map(&:strip)
+      if endpoint.request_path =~ /^\/examples\// && endpoint.request_method == 'GET'
+        group, desc = endpoint.properties[:route][:description].split(':').map(&:strip)
 
         links.push(
           {
-            href: endpoint[:request_path],
+            href: endpoint.request_path,
             group: group,
             desc: desc
           }

@@ -15,6 +15,11 @@ class App::Examples < App::Visitor
     render 'hooks.html'
   end
 
+  desc 'core: multiple format support'
+  get '/forms' do
+    render 'forms.html'
+  end
+
   desc 'core: middlewares'
   get '/middleware' do
     render 'middleware.html'
