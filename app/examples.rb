@@ -45,6 +45,11 @@ class App::Examples < App::Visitor
     render 'redirect.html'
   end
 
+  desc 'core: configure payload parsing'
+  get '/payload' do
+    render 'payload.html'
+  end
+
   desc 'auth: escher auth'
   get '/escher' do
     render 'escher.html'
