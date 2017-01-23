@@ -16,6 +16,5 @@ class App < Rack::App
   serve_files_from '/www'
   mount App::Visitor
   mount App::Examples, to: '/examples'
-  mount App::Sandbox, to: '/sandbox'
 
 end
