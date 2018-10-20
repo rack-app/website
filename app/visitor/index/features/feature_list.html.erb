@@ -9,8 +9,8 @@
       ],
       'no Class method bloat, so you can enjoy pure ruby without any surprises' => [],
       'App mounting so you can create separated controllers for different task' => [],
-      'Null time look up routing' => [
-          'allows as many endpoint registration to you as you want, without impact on route look up speed'
+      'O(log(n)) lookup routing' => [
+          'allows as many endpoint registration to you as you want, without impacting the route lookup speed'
       ],
       'only basic sets for instance method lvl for the must need tools, such as params, payload ' => [],
       'simple to use class level response serializer' => [
@@ -18,7 +18,9 @@
       ],
       'static file serving so you can mount even filesystem based endpoints too' => [],
       'built in testing module so your app can easily written with BDD approach' => [],
-      'made with performance in mind so your app don&#39;t lose time by your framework' => [],
+      'made with minimalism in mind so your app can\'t rely on the framework when you implement business logic' => [
+          "if you need something, you should implement it without any dependency on a webframework, rack-app only mean to be to provide you with easy to use interface to the web layer, nothing less and nothing more"
+      ],
 
       'controller/endpoint level based middleware definitions' => [
           'you can define middleware stack before endpoints and it will only applied to them, similar like protected method workflow'
