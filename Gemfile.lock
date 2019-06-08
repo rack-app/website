@@ -4,7 +4,7 @@ GEM
     erubis (2.7.0)
     loader (3.1.0)
     puma (3.8.2)
-    rack (2.0.1)
+    rack (2.0.7)
     rack-app (6.7.0)
       rack
     rack-app-front_end (0.22.0)
@@ -23,13 +23,14 @@ DEPENDENCIES
   erubis
   loader
   puma
+  rack (>= 2.0.6)
   rack-app
   rack-app-front_end
   rack-host-redirect
   shotgun
 
 RUBY VERSION
-   ruby 2.3.0p0
+   ruby 2.6.3p62
 
 BUNDLED WITH
-   1.14.6
+   1.17.2
