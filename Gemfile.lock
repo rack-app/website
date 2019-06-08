@@ -4,7 +4,7 @@ GEM
     erubis (2.7.0)
     loader (3.1.0)
     puma (3.8.2)
-    rack (2.0.1)
+    rack (2.0.7)
     rack-app (6.7.0)
       rack
     rack-app-front_end (0.22.0)
