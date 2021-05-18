@@ -3,7 +3,9 @@ GEM
   specs:
     erubis (2.7.0)
     loader (3.1.0)
-    puma (3.12.6)
+    nio4r (2.5.7)
+    puma (4.3.8)
+      nio4r (~> 2.0)
     rack (2.1.4)
     rack-app (6.7.0)
       rack
