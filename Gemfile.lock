@@ -3,9 +3,11 @@ GEM
   specs:
     erubis (2.7.0)
     loader (3.1.0)
-    puma (3.12.6)
-    rack (2.1.4)
-    rack-app (6.7.0)
+    nio4r (2.5.7)
+    puma (5.3.2)
+      nio4r (~> 2.0)
+    rack (2.2.3)
+    rack-app (7.7.0)
       rack
     rack-app-front_end (0.22.0)
       rack-app (>= 6.3.1)
@@ -14,10 +16,10 @@ GEM
       rack
     shotgun (0.9.2)
       rack (>= 1.0)
-    tilt (2.0.7)
+    tilt (2.0.10)
 
 PLATFORMS
-  ruby
+  x86_64-linux
 
 DEPENDENCIES
   erubis
@@ -30,7 +32,7 @@ DEPENDENCIES
   shotgun
 
 RUBY VERSION
-   ruby 2.6.3p62
+   ruby 3.0.1p64
 
 BUNDLED WITH
-   1.17.2
+   2.2.18
