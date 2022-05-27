@@ -6,7 +6,7 @@ GEM
     nio4r (2.5.7)
     puma (5.3.2)
       nio4r (~> 2.0)
-    rack (2.2.3)
+    rack (2.2.3.1)
     rack-app (7.7.0)
       rack
     rack-app-front_end (0.22.0)
